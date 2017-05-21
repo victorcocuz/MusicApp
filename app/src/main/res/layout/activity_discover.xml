@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicapp.Discover">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ic_menu"
+            style="@style/TopMenu"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/activity_title"
+            style="@style/TopMenu"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:text="@string/act_discover"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/ic_share"
+            style="@style/TopMenu"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_share" />
+
+        <ImageButton
+            android:id="@+id/ic_search"
+            style="@style/TopMenu"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/discover_list_view"
+        android:background="#aaa"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/ic_discover"
+            style="@style/PlayMenu"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_discover" />
+
+        <ImageButton
+            android:id="@+id/ic_playlists"
+            style="@style/PlayMenu"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_playlists" />
+
+        <ImageButton
+            android:id="@+id/ic_play"
+            style="@style/PlayMenu"
+            android:layout_width="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_play" />
+
+        <ImageButton
+            android:id="@+id/ic_add"
+            style="@style/PlayMenu"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_add" />
+
+        <ImageButton
+            android:id="@+id/ic_music"
+            style="@style/PlayMenu"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_library" />
+
+    </LinearLayout>
+
+</LinearLayout>

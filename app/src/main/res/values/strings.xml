@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="act_main">Login</string>
+    <string name="act_playing_now">Playing Now</string>
+    <string name="act_discover">Discover</string>
+    <string name="act_library">Library</string>
+    <string name="act_playlists">Playlists</string>
+    <string-array name="playlist_title">
+        <item>Underground Indie: Lo-Fi, Noise Pop, Etc</item>
+        <item>Surf Pop - Jangle Pop - Slacker Pop</item>
+        <item>Urban Nights</item>
+        <item>Soul Music</item>
+        <item>MTV\'s 120 Minutes</item>
+        <item>Calm Vibes</item>
+        <item>Around The World in 80 Songs</item>
+        <item>Please Don\'t Call It Jazz</item>
+        <item>50 Greatest Punk Anthems</item>
+        <item>ALLternative Shuffle</item>
+        <item>Forgotten Rock Classics</item>
+        <item>When MTV Was Good</item>
+    </string-array>
+    <string-array name="playlist_subtitle">
+        <item>Sounds in underground indie</item>
+        <item>Daydream music</item>
+        <item>The streets at night</item>
+        <item>The origins of soul music</item>
+        <item>MTV past hits</item>
+        <item>Relax your way into a peaceful moment</item>
+        <item>Taking a trip around the world in 80 songs</item>
+        <item>Forget the label. This is just good music</item>
+        <item>A playlist of the best punk anthems </item>
+        <item>Take a trip through alternative music</item>
+        <item>Great rock classics that deserve more plays</item>
+        <item>Best of pop, boy and girl bands</item>
+    </string-array>
+    <string-array name="library_title">
+        <item>When the Whip Comes Down</item>
+        <item>Spread Your Wings</item>
+        <item>Word on a Wing</item>
+        <item>Welcome to the Machine</item>
+        <item>Soldier of Fortune</item>
+        <item>Over the Hills and Far Away</item>
+        <item>The Poet and the Painter</item>
+        <item>My Friend</item>
+        <item>It\'s a Long Road</item>
+        <item>We Can Be Together</item>
+        <item>Mother Nature\'s Son</item>
+        <item>Love Me Two Times</item>
+    </string-array>
+    <string-array name="library_subtitle">
+        <item>Rolling Stones - Some Girls</item>
+        <item>Queen - News Of The World</item>
+        <item>David Bowie - Station To Station</item>
+        <item>Pink Floyd - Wish You Were Here</item>
+        <item>Deep Purple - Stormbringer</item>
+        <item>Led Zeppelin - Houses of the Holy</item>
+        <item>Jethro Tull - Thick as a Brick</item>
+        <item>Jimy Hendrix - The Cry of Love</item>
+        <item>Supertramp - Supertramp</item>
+        <item>Jefferson Airplane - Volunteers</item>
+        <item>Beatles - The White Album</item>
+        <item>The Doors - Strange Days</item>
+    </string-array>
+</resources>
