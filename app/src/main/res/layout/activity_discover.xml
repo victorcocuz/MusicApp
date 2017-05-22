@@ -1,41 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_discover"
     android:orientation="vertical"
-    tools:context="com.example.android.musicapp.Discover">
+    tools:context="com.example.android.musicapp.Discover"
+    tools:ignore="ContentDescription">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="52dp"
+        android:background="#4D000000"
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/ic_menu"
+            android:id="@+id/discover_ic_menu"
             style="@style/TopMenu"
             android:scaleType="centerInside"
             android:src="@drawable/ic_menu" />
 
         <TextView
-            android:id="@+id/activity_title"
+            android:id="@+id/discover_activity_title"
             style="@style/TopMenu"
-            android:layout_weight="7"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="3"
             android:gravity="center_vertical"
-            android:scaleType="centerInside"
             android:text="@string/act_discover"
             android:textSize="24sp" />
 
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
         <ImageButton
-            android:id="@+id/ic_share"
+            android:id="@+id/discover_ic_share"
             style="@style/TopMenu"
             android:scaleType="centerInside"
             android:src="@drawable/ic_share" />
 
         <ImageButton
-            android:id="@+id/ic_search"
+            android:id="@+id/discover_ic_search"
             style="@style/TopMenu"
             android:scaleType="centerInside"
             android:src="@drawable/ic_search" />
@@ -43,54 +49,69 @@
     </LinearLayout>
 
     <ListView
-        android:layout_width="match_parent"
         android:id="@+id/discover_list_view"
-        android:background="#aaa"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8">
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:divider="#00ffffff"
+        android:dividerHeight="2dp">
 
     </ListView>
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+
+    <SeekBar
+        android:id="@+id/discover_seekBar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_alignParentBottom="true"
-        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="#4d000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#4d000000"
         android:orientation="horizontal">
 
 
         <ImageButton
-            android:id="@+id/ic_discover"
+            android:id="@+id/discover_ic_discover"
             style="@style/PlayMenu"
             android:scaleType="centerInside"
             android:src="@drawable/btn_discover" />
 
         <ImageButton
-            android:id="@+id/ic_playlists"
+            android:id="@+id/discover_ic_playlists"
             style="@style/PlayMenu"
             android:scaleType="centerInside"
             android:src="@drawable/btn_playlists" />
 
         <ImageButton
-            android:id="@+id/ic_play"
+            android:id="@+id/discover_ic_play"
             style="@style/PlayMenu"
-            android:layout_width="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
             android:scaleType="centerInside"
             android:src="@drawable/btn_play" />
 
         <ImageButton
-            android:id="@+id/ic_add"
+            android:id="@+id/discover_ic_add"
             style="@style/PlayMenu"
             android:scaleType="centerInside"
             android:src="@drawable/btn_add" />
 
         <ImageButton
-            android:id="@+id/ic_music"
+            android:id="@+id/discover_ic_library"
             style="@style/PlayMenu"
             android:scaleType="centerInside"
             android:src="@drawable/btn_library" />
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#4d000000" />
 
 </LinearLayout>

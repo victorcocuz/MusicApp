@@ -5,7 +5,9 @@ import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,34 +16,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton IcDiscover = (ImageButton) findViewById(R.id.ic_discover);
-        IcDiscover.setOnClickListener(new View.OnClickListener(){
+
+        Button IcLibrary = (Button) findViewById(R.id.main_login);
+        IcLibrary.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick (View view){
-                Intent goToDiscover = new Intent(MainActivity.this, Discover.class);
-                startActivity(goToDiscover);
+            public void onClick(View view) {
+                Intent goToPlayingNow = new Intent(MainActivity.this, PlayingNow.class);
+                startActivity(goToPlayingNow);
             }
-            });
+        });
 
-        ImageButton IcPlaylists = (ImageButton) findViewById(R.id.ic_playlists);
-        IcPlaylists.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick (View view){
-                Intent goToPlaylists = new Intent(MainActivity.this, Playlists.class);
-                startActivity(goToPlaylists);
-            }
-            });
+        Toast.makeText(MainActivity.this, "This is a playlist based music app that will play songs of a certain type in anti-chronological order. The login activity will check the user name and password in a database on a server. The artwork of the current song will always be displayed as a blurred background", Toast.LENGTH_LONG).show();
 
-        ImageButton IcLibrary = (ImageButton) findViewById(R.id.ic_library);
-        IcLibrary.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick (View view){
-                Intent goToLibrary = new Intent(MainActivity.this, Library.class);
-                startActivity(goToLibrary);
-            }
-            });
-
-
-        }
 
     }
+
+}

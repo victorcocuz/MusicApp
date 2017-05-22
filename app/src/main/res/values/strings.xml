@@ -1,13 +1,19 @@
 <resources>
-    <string name="app_name">MusicApp</string>
+    <string name="app_name">Dive</string>
     <string name="act_main">Login</string>
     <string name="act_playing_now">Playing Now</string>
     <string name="act_discover">Discover</string>
     <string name="act_library">Library</string>
     <string name="act_playlists">Playlists</string>
-    <string-array name="playlist_title">
-        <item>Underground Indie: Lo-Fi, Noise Pop, Etc</item>
-        <item>Surf Pop - Jangle Pop - Slacker Pop</item>
+    <string name="main_username">Username</string>
+    <string name="main_password">Password</string>
+    <string name="main_login">Login</string>
+    <string name="main_signup">Sign Up</string>
+    <string name="list_row_title">Title</string>
+    <string name="list_row_subtitle">Subtitle</string>
+    <string-array name="discover_title">
+        <item>Underground: Lo-Fi, Noise Pop</item>
+        <item>Surf Pop - Slacker Pop</item>
         <item>Urban Nights</item>
         <item>Soul Music</item>
         <item>MTV\'s 120 Minutes</item>
@@ -19,7 +25,7 @@
         <item>Forgotten Rock Classics</item>
         <item>When MTV Was Good</item>
     </string-array>
-    <string-array name="playlist_subtitle">
+    <string-array name="discover_subtitle">
         <item>Sounds in underground indie</item>
         <item>Daydream music</item>
         <item>The streets at night</item>
@@ -60,5 +66,15 @@
         <item>Jefferson Airplane - Volunteers</item>
         <item>Beatles - The White Album</item>
         <item>The Doors - Strange Days</item>
+    </string-array>
+    <string-array name="playlists_title">
+        <item>Beatle Mania</item>
+        <item>Rock Journey</item>
+        <item>Create a Playlist</item>
+    </string-array>
+    <string-array name="playlists_subtitle">
+        <item>The best of Beatles</item>
+        <item>A history of Rock music</item>
+        <item>Add songs that play chronologically</item>
     </string-array>
 </resources>

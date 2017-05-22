@@ -11,20 +11,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import static android.R.attr.resource;
 
-/**
- * Created by victo on 5/21/2017.
- */
-
- class PlaylistAdapter extends ArrayAdapter<String> {
+class PlaylistAdapter extends ArrayAdapter<String> {
 
     Context c;
     int[] adapter_img;
     String[] adapter_title;
     String[] adapter_subtitle;
 
-    PlaylistAdapter(@NonNull Context context, @LayoutRes int[] img, @LayoutRes String[] title, @LayoutRes String[] subtitle) {
+    PlaylistAdapter(@NonNull Context context, @LayoutRes int[] img, String[] title, String[] subtitle) {
         super(context, R.layout.list_row);
         this.c = context;
         this.adapter_img = img;
@@ -45,6 +40,12 @@ import static android.R.attr.resource;
         listViewImage.setImageResource(adapter_img[position]);
         listViewTitle.setText(adapter_title[position]);
         listViewSubtitle.setText(adapter_subtitle[position]);
-        return super.getView(position, convertView, parent);
+        return customView;
     }
+
+    @Override
+    public int getCount() {
+        return adapter_title.length;
+    }
+
 }

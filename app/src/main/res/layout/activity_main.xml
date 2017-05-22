@@ -1,51 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicapp.MainActivity">
+    android:background="@drawable/bg_main_activity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicapp.MainActivity"
+    tools:ignore="ContentDescription">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/dive" />
 
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/logo" />
 
-        <ImageButton
-            android:id="@+id/ic_discover"
-            style="@style/PlayMenu"
-            android:scaleType="centerInside"
-            android:src="@drawable/btn_discover" />
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_fill"
+        android:gravity="center"
+        android:hint="@string/main_username"
+        android:inputType="textCapWords"
+        android:textColor="#80011627" />
 
-        <ImageButton
-            android:id="@+id/ic_playlists"
-            style="@style/PlayMenu"
-            android:scaleType="centerInside"
-            android:src="@drawable/btn_playlists" />
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/button_fill"
+        android:gravity="center"
+        android:hint="@string/main_password"
+        android:inputType="textCapWords"
+        android:textColor="#80011627" />
 
-        <ImageButton
-            android:id="@+id/ic_play"
-            style="@style/PlayMenu"
-            android:layout_width="68dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/btn_play" />
+    <Button
+        android:id="@+id/main_login"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_login"
+        android:text="@string/main_login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
 
-        <ImageButton
-            android:id="@+id/ic_add"
-            style="@style/PlayMenu"
-            android:scaleType="centerInside"
-            android:src="@drawable/btn_add" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/main_signup"
+        android:textColor="@color/colorAccent" />
 
-        <ImageButton
-            android:id="@+id/ic_library"
-            style="@style/PlayMenu"
-            android:scaleType="centerInside"
-            android:src="@drawable/btn_library" />
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+</LinearLayout>
