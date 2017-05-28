@@ -50,6 +50,5 @@ public class PlayingNow extends AppCompatActivity {
             }
         });
 
-        Toast.makeText(PlayingNow.this, "Playing now will access MediaPlayer to play songs from the last.fm database. There will be a slider to switch between songs with a scale up and center effect. In the bottom menu discover music, playlists, play now, add playlist and library can be accessed. On top, there will be a button for settings, download and search.", Toast.LENGTH_LONG).show();
     }
 }

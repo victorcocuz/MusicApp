@@ -12,16 +12,15 @@
     <ImageView
         android:layout_width="160dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/dive" />
 
     <ImageView
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginBottom="40dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginBottom="24dp"
         android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
         android:src="@drawable/logo" />
 
     <EditText
@@ -37,12 +36,16 @@
     <EditText
         android:layout_width="240dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="60dp"
         android:background="@drawable/button_fill"
         android:gravity="center"
         android:hint="@string/main_password"
         android:inputType="textCapWords"
         android:textColor="#80011627" />
+
+    <TextView
+        android:id="@+id/main_text"
+        style="@style/Text"
+        android:text="@string/text_view_main"/>
 
     <Button
         android:id="@+id/main_login"

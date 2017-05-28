@@ -59,8 +59,6 @@ public class Library extends AppCompatActivity {
             }
         });
 
-        Toast.makeText(Library.this, "This is all the library songs are saved. Only songs that are in the library can be played outside of a playlist.", Toast.LENGTH_LONG).show();
-
         Resources res = getResources();
         library_title = res.getStringArray(R.array.library_title);
         library_subtitle = res.getStringArray(R.array.library_subtitle);

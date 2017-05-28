@@ -60,8 +60,6 @@ public class Playlists extends AppCompatActivity {
             }
         });
 
-        Toast.makeText(Playlists.this, "The user can create his own playlist by mix and matching the songs in his library. All playlists are publicly shared", Toast.LENGTH_LONG).show();
-
         Resources res = getResources();
         playlists_title = res.getStringArray(R.array.playlists_title);
         playlists_subtitle = res.getStringArray(R.array.playlists_subtitle);

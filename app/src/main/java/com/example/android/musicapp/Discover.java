@@ -60,8 +60,6 @@ public class Discover extends AppCompatActivity {
             }
         });
 
-        Toast.makeText(Discover.this, "The discover activity will connect the user via playlists created by other users. All playlists have music played anti-chronologically.", Toast.LENGTH_LONG).show();
-
         Resources res = getResources();
         discover_title = res.getStringArray(R.array.discover_title);
         discover_subtitle = res.getStringArray(R.array.discover_subtitle);

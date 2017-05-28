@@ -14,14 +14,12 @@ import android.widget.TextView;
 
 class PlaylistAdapter extends ArrayAdapter<String> {
 
-    Context c;
     int[] adapter_img;
     String[] adapter_title;
     String[] adapter_subtitle;
 
     PlaylistAdapter(@NonNull Context context, @LayoutRes int[] img, String[] title, String[] subtitle) {
         super(context, R.layout.list_row);
-        this.c = context;
         this.adapter_img = img;
         this.adapter_title = title;
         this.adapter_subtitle = subtitle;

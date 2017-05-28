@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Dive</string>
-    <string name="act_main">Login</string>
     <string name="act_playing_now">Playing Now</string>
     <string name="act_discover">Discover</string>
     <string name="act_library">Library</string>
@@ -11,6 +10,11 @@
     <string name="main_signup">Sign Up</string>
     <string name="list_row_title">Title</string>
     <string name="list_row_subtitle">Subtitle</string>
+    <string name="text_view_main">This is a playlist based music app that will play songs of a certain type in anti-chronological order. The login activity will check the user name and password in a database on a server. The artwork of the current song will always be displayed as a blurred background.</string>
+    <string name="text_view_discover">The discover activity will connect the user via playlists created by other users. All playlists have music played anti-chronologically.</string>
+    <string name="text_view_library">This is all the library songs are saved. Only songs that are in the library can be played outside of a playlist.</string>
+    <string name="text_view_playing_now">Playing now will access MediaPlayer to play songs from the last.fm database. There will be a slider to switch between songs with a scale up and center effect. In the bottom menu discover music, playlists, play now, add playlist and library can be accessed. On top, there will be a button for settings, download and search.</string>
+    <string name="text_view_playlists">The user can create his own playlist by mix and matching the songs in his library. All playlists are publicly shared.</string>
     <string-array name="discover_title">
         <item>Underground: Lo-Fi, Noise Pop</item>
         <item>Surf Pop - Slacker Pop</item>

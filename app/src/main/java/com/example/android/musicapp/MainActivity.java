@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import static android.R.attr.order;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,10 +27,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(goToPlayingNow);
             }
         });
-
-        Toast.makeText(MainActivity.this, "This is a playlist based music app that will play songs of a certain type in anti-chronological order. The login activity will check the user name and password in a database on a server. The artwork of the current song will always be displayed as a blurred background", Toast.LENGTH_LONG).show();
-
-
     }
 
 }
